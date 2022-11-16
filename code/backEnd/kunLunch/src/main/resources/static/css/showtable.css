@@ -1,0 +1,70 @@
+#table_name{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px auto;
+}
+table.lunchbox {
+    text-align: left;
+    cursor: pointer;
+    border: 3px solid #FA8072;
+    border-radius: 10px;
+    margin : 20px auto;
+  }
+  table.lunchbox th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #153d73;
+    
+    border-bottom: 1px solid #FA8072;
+    border-collapse: collapse;
+  
+  }
+  table.lunchbox th img{
+    width:320px
+  }
+  
+  table.lunchbox tr:last-child th{
+    border-bottom: 0px;
+  }
+
+  table.lunchbox td.lunchbox_menu {
+    width: 349px;
+    padding: 10px;
+    vertical-align: center;
+    text-align: center;
+    border-bottom: 1px solid #FA8072;
+    border-collapse: collapse;
+  }
+
+  table.lunchbox tr:last-child td.lunchbox_menu{
+    border-bottom: 0px;
+  }
+
+  td.lunchbox_menu p:first-child{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  td.lunchbox_menu p:last-child{
+    font-size: 14px;
+    color:#FA8072;
+    
+  }
+
+#content{
+    width:1050px;
+    margin:0 auto;
+}
+
+@media screen and (max-width: 1049px){
+    #content{
+        width:100%
+    }
+    table.lunchbox th img{
+      width:50vw
+    }
+    table.lunchbox td.lunchbox_menu{
+      width:50vw
+    }
+    
+}

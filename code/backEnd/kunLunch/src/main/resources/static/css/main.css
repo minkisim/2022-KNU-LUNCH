@@ -1,0 +1,41 @@
+*{margin:0;padding:0}
+#content{
+    width:1050px;
+    margin:0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1049px){
+    #content{
+        width:100%
+    }
+}
+
+
+#map{
+    width:1050px;
+    height:600px;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 1049px){
+    #map{
+        width:100vw;
+        height:60vw;
+        margin:10px auto;
+    }
+}
+
+#qrcode img{
+    width:256px;
+    height:256px;
+    margin:15px auto;
+}
+
+@media screen and (max-width: 1049px){
+    #qrcode img{
+        width:100vw;
+        height: 100vw;
+        margin:15px auto;
+    }
+}
