@@ -1,0 +1,78 @@
+#user_div{
+    border: 1px solid #dcdcdc;
+    width:600px;
+    margin: 0 auto;
+    padding: 20px 10px
+}
+
+#login_logo{
+    display : flex;
+    width:462px;
+    margin:0 auto;
+    justify-content: center;
+}
+#login_logo img{
+    height:48px;
+    padding: 0px 10px;
+    margin: 10px 0px;
+}
+#login_logo p{
+    font-size: 24px;
+    margin:18px 0px;
+    font-weight:bold
+}
+
+
+#login_div{
+    width:460px;
+    padding:20px 30px;
+    margin:0 auto;
+}
+#login_div input{
+    width:420px;
+    padding:0px 20px;
+    height:46px;
+    margin:auto;
+    margin-bottom: 10px;
+
+    border:1px #dcdcdc solid
+}
+
+#login_div button{
+    width:462px;
+    height:46px;
+    text-align: center;
+    background-color: #FA8072;
+    color:white;
+    font-size:18px;
+    font-weight: 700;
+    border:1px #dcdcdc solid
+}
+
+
+@media screen and (max-width: 1049px){
+    #user_div{
+        width:90vw;
+    }
+    
+    #login_logo{
+        width:80vw;
+    }
+    #login_div{
+        width:80vw;
+        padding:5vw 5vw;
+        
+    }
+    #login_div input{
+        width:70vw;
+        padding:0px 5vw;
+        height:10vw;
+    }
+    
+    #login_div button{
+        width:80vw;
+        padding:0px 5vw;
+        height:10vw;
+    }
+
+}

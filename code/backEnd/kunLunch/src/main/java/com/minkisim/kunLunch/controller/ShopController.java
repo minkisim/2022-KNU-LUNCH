@@ -13,4 +13,9 @@ public class ShopController {
     public String showMenu(Model model){
         return "menu/showMenu";
     }
+
+    @GetMapping(value = "shopHistory")
+    public String shopHistory(){
+        return "menu/shopHistory";
+    }
 }

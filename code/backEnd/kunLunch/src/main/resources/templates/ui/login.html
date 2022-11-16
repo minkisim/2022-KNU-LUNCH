@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+
+<div layout:fragment="content">
+
+    <div id="content">
+        <div id="user_div" >
+            <div id="login_logo">
+                <img th:src="@{/img/logo.png}" alt="로고">
+                <p>학식 도시락</p>
+            </div>
+            <div id="login_div">
+                <input type="text" placeholder="ID">
+                <input type="text" placeholder="PASSWORD">
+                <button>LOGIN</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</html>
