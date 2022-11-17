@@ -34,9 +34,9 @@ public class Member {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    public static Member createUser(MemberFormDto memberFormDto, PasswordEncoder passwordEncoder){
+    public static Member createMember(MemberFormDto memberFormDto, PasswordEncoder passwordEncoder){
         Member member = new Member();
-        member.setMemberID(memberFormDto.getMemberId());
+        member.setMemberID(memberFormDto.getMemberID());
         member.setName(memberFormDto.getName());
         member.setEmail(memberFormDto.getEmail());
         String password = passwordEncoder.encode(memberFormDto.getPassword());

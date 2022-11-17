@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" th:href="@{/css/header.css}">
     <link rel="stylesheet" th:href="@{/css/main.css}">
-    <link rel="stylesheet" th:href="@{/css/showtable.css}">
-    <link rel="stylesheet" th:href="@{/css/member.css}">
+
 
     <title>경북대 학식 도시락</title>
-    <script src="https://kit.fontawesome.com/26b6b14428.js" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <th:block layout:fragment="script"></th:block>
+    <th:block layout:fragment="css"></th:block>
 </head>
 
 
@@ -28,7 +29,7 @@
 
 <div th:replace="fragments/footer::footer"></div>
 
-
+<script src="https://kit.fontawesome.com/26b6b14428.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

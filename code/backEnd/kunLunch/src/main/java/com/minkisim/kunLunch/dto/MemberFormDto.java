@@ -13,7 +13,7 @@ import javax.validation.constraints.NotEmpty;
 public class MemberFormDto {
 
     @NotBlank(message = "학번은 필수 입력 값입니다.")
-    private String memberId;
+    private String memberID;
     @NotBlank(message = "이름은 필수 입력 값입니다.")
     private String name;
     @NotEmpty(message = "이메일은 필수 입력 값입니다.")

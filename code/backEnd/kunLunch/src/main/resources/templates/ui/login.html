@@ -3,7 +3,9 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/layout1}">
 
-
+<th:block layout:fragment="css">
+    <link rel="stylesheet" th:href="@{/css/member.css}">
+</th:block>
 
 <div layout:fragment="content">
     <div id="user_div">
@@ -12,9 +14,13 @@
             <p>학식 도시락</p>
         </div>
         <div id="login_div">
-            <input type="text" placeholder="ID">
-            <input type="text" placeholder="PASSWORD">
-            <button>LOGIN</button>
+            <form th:action="@{/members/login}" method="post" role="form">
+                <input type="text" name="memberID" placeholder="ID" >
+                <input type="password" name="password" placeholder="PASSWORD">
+                <p th:if="${loginErrorMsg}" class="error" th:text="${loginErrorMsg}"></p>
+                <button>LOGIN</button>
+
+            </form>
         </div>
         <div id="find_user_btn">
             <p><a th:href="@{/}">비밀번호 찾기</a></p>

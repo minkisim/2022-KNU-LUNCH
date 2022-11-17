@@ -3,6 +3,10 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/layout1}">
 
+<th:block layout:fragment="css">
+    <link rel="stylesheet" th:href="@{/css/showtable.css}">
+</th:block>
+
 <div layout:fragment="content">
     <p id="table_name">공식당</p>
     <table class="lunchbox">

@@ -2,8 +2,8 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-<div th:fragment="header">
-    <div id="header">
+<div id="header" th:fragment="header">
+
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
         <script>
@@ -44,8 +44,8 @@
             <p>이벤트</p>
         </div>
         <div id="my">
-            <a th:href="@{/ui/login}"><i class="fa-solid fa-user"></i></a>
-            <a th:href="@{/ui/login}"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            <a th:href="@{/members/login}"><i class="fa-solid fa-user"></i></a>
+            <a th:href="@{/members/login}"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
         </div>
         <div id="menu-container" style="margin-top: 7px;">
             <div id="menu-wrapper">
@@ -80,7 +80,7 @@
             </ul>
             <!-- menu-list accordion-->
         </div>
-    </div>
+
 
 
 </div>
