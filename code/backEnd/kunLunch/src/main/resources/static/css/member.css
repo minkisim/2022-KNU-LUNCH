@@ -1,7 +1,7 @@
 #user_div{
     border: 1px solid #dcdcdc;
     width:600px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 20px 10px
 }
 
@@ -49,30 +49,47 @@
     border:1px #dcdcdc solid
 }
 
+#find_user_btn{
+    display:flex;
+    width:350px;
+    padding:20px 30px;
+    margin:0 auto;
+    justify-content:space-between;
+
+}
+
 
 @media screen and (max-width: 1049px){
     #user_div{
         width:90vw;
     }
-    
+
     #login_logo{
         width:80vw;
     }
     #login_div{
         width:80vw;
         padding:5vw 5vw;
-        
+
     }
     #login_div input{
         width:70vw;
         padding:0px 5vw;
         height:10vw;
     }
-    
+
     #login_div button{
         width:80vw;
         padding:0px 5vw;
         height:10vw;
     }
+
+    #find_user_btn{
+        display:flex;
+        width:80vw;
+        padding:10vw 5vw;
+        margin:0 auto;
+    }
+
 
 }

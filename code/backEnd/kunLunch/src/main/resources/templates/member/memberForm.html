@@ -2,25 +2,29 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/layout1}">
+<head>
+    <div layout:fragment="cssContent">
+        <link rel="stylesheet" th:href="@{/css/member.css}">
+    </div>
 
-
+</head>
 
 <div layout:fragment="content">
-    <div id="user_div">
+
+    <div id="user_div" >
         <div id="login_logo">
             <img th:src="@{/img/logo.png}" alt="로고">
-            <p>학식 도시락</p>
+            <p>학식 도시락 회원가입</p>
         </div>
         <div id="login_div">
-            <input type="text" placeholder="ID">
+            <input type="text" placeholder="학번">
             <input type="text" placeholder="PASSWORD">
-            <button>LOGIN</button>
-        </div>
-        <div id="find_user_btn">
-            <p><a th:href="@{/}">비밀번호 찾기</a></p>
-            <p><a th:href="@{/members/new}">회원가입</a></p>
+            <input type="text" placeholder="NAME">
+            <input type="text" placeholder="EMAIL">
+            <button>가입하기</button>
         </div>
     </div>
+
 
 </div>
 </html>

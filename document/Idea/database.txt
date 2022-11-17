@@ -3,7 +3,6 @@
 테이블 계획
 USER : 유저 테이블
 LUNCHBOX : 도시락 테이블
-LUNCHBOX_OPTION : 도시락 세부사항(알레르기, 옵션 메뉴) 선택
 LUNCHBOX_REMAIN : 도시락 현재 남은 개수
 ORDER : 주문 내역
 ORDER OPTION: 세부 주문 내역
