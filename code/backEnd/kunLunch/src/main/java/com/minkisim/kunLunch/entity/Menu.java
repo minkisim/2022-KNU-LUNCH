@@ -5,6 +5,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name="Menu")
@@ -14,7 +15,7 @@ import javax.persistence.*;
 public class Menu {
 
     @Id
-    @Column(name="id")
+    @Column(name="menu_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
@@ -28,4 +29,6 @@ public class Menu {
 
     private String menuDetail;
     private String menuWarning;
+    private LocalDateTime regTime;
+    private LocalDateTime updateTime;
 }
